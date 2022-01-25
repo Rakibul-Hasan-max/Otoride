@@ -1,0 +1,47 @@
+.item1{
+    width: 9vh;
+    height: 9vh;
+    background-color: #FFFD5D;
+    border-radius: 50%;
+}
+.item2{
+    width: 9vh;
+    height: 9vh;
+    background-color: #8EF6FF;
+    border-radius: 50%;
+}
+.item3{
+    width: 9vh;
+    height: 9vh;
+    background-color: #98FFAB;
+    border-radius: 50%;
+}
+.item4{
+    width: 9vh;
+    height: 9vh;
+    background-color: #F0D8FF;
+    border-radius: 50%;
+}
+.frame-img img{
+    position: relative;
+    top: -10px;
+    left: -12px;
+}
+.pay{
+    z-index: 1;
+}
+.world{
+    position: relative;
+    margin-top: -82vh;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .world{
+        position: static;
+        display: block;
+    }
+  }
+
+  
