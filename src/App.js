@@ -3,10 +3,8 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import theme from './theme'
 
-
 function App() {
   return (
-    
     <>
       <ThemeProvider theme={theme}>
       <Home />
