@@ -10,6 +10,7 @@ import Payment from './Payment';
 import World from './World';
 import Contact from './Contact';
 import Navbar from '../Navbar';
+import Footer from './Footer';
 
 const Home = () => {
   return <>
@@ -28,6 +29,7 @@ const Home = () => {
     <World />
     </div>
     <Contact />
+    <Footer />
   </>;
 };
 
