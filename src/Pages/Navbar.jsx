@@ -5,15 +5,14 @@ import { Container, Fab, Grid } from '@mui/material';
 
 const Navbar = () => {
   return (
-    <Box>
+    <Box sx={{ backgroundColor: '#CEFDF5', pt: 3 }}>
       <Container>
         <Grid container
           direction="row"
           justifyContent="space-around"
-          alignItems="center"
-          sx={{ mt: 1 }} spacing={2}>
+          alignItems="center">
           <Grid item xs={12} md={5}>
-            <Box sx={{ p: 1, ml: 1 }}>
+            <Box>
               <img src={logo} />
             </Box>
           </Grid>
