@@ -10,53 +10,49 @@ import img26 from '../../Images/image26.png'
 
 const Banner = () => {
   return (
-    <div>
-      <Container sx={{mb:5}}>
-        <Grid  container
-  direction="row"
-  justifyContent="center"
-  alignItems="center" spacing={2}>
-         
+    <Box sx={{ mb: 5, backgroundColor: '#CEFDF5' }}>
+        <Grid container
+          direction="row"
+          justifyContent="center"
+          alignItems="center" spacing={2}
+        >
           <Grid item xs={12} md={6}>
-          <Container sx={{mt:13,ml:8}}>
-            <Typography variant="h3">
-              Most Advanced <br /> 
-              Veichale Sharing <br/>
-               Platform
-            </Typography>
-            <Fab
-              variant="extended"
-              color="primary"
-              sx={{
-                backgroundColor: "black",
-                "&:hover": {
-                  backgroundColor: "#263238",
-                },
-                px: 4,
-                mt: 3,
-              }}
-            >
-              Get Started
-            </Fab>
-            <Box sx={{ flexDirection: 'row',mt:10 }}>
-            <img style={{marginBottom:'15px',}} src={trusted} />
-            <img style={{marginLeft:'15px',}} src={img23} />
-            <img src={img24} />
-            <img src={img25} />
-            <img src={img26} />
+            <Box sx={{mt:10, ml:30}}>
+              <Typography variant="h3">
+                Most Advanced <br /> 
+                Veichale Sharing <br/>
+                Platform
+              </Typography>
+              <Fab
+                variant="extended"
+                color="primary"
+                sx={{
+                  backgroundColor: "black",
+                  "&:hover": {
+                    backgroundColor: "#263238",
+                  },
+                  px: 4,
+                  mt: 3,
+                }}
+              >
+                Get Started
+              </Fab>
+              <Box sx={{ flexDirection: 'row',mt:10 }}>
+                <img style={{marginBottom:'15px',}} src={trusted} />
+                <img style={{marginLeft:'15px',}} src={img23} />
+                <img src={img24} />
+                <img src={img25} />
+                <img src={img26} />
+              </Box>
             </Box>
-            
-            </Container>
           </Grid>
-          
           <Grid item xs={12} md={6}>
-              <Box >
+              <Box sx={{px: 1}}>
                   <img style={{width:'100%'}} src={banner} />
               </Box>
           </Grid>
         </Grid>
-      </Container>
-    </div>
+    </Box>
   );
 };
 
