@@ -1,7 +1,8 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterestP } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import logo from '../../Images/logo.svg';
 
 const Footer = () => {
     return (
@@ -11,11 +12,11 @@ const Footer = () => {
                     <Grid item xs={12} md={3}>
                         <Box>
                             <Box sx={{ my: 2 }}>
-                                <Typography sx={{ my: 1 }}>
-                                    OTOride
-                                </Typography>
+                                <Box sx={{ p: 1, mb: 4, backgroundColor: 'white', width: '60%' }}>
+                                    <img src={logo} />
+                                </Box>
                                 <Typography variant='caption'>Social Connection</Typography>
-                                <Box sx={{ display: 'flex', mt: 2 }}>
+                                <Box sx={{ display: 'flex', mt: 2, gap: 4 }}>
                                     <Box className="footer-icon">
                                         <FaFacebookF />
                                     </Box>
@@ -28,19 +29,17 @@ const Footer = () => {
                                     <Box className="footer-icon">
                                         <FaYoutube />
                                     </Box>
-                                    <Box className="footer-icon">
-                                        <FaPinterestP />
-                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={5}>
                         <Typography variant='button' sx={{ fontSize: 25 }}>
-                            About OTOride
+                            Location
                         </Typography>
                         <Typography sx={{ my: 3 }}>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus rem aspernatur odit, fuga aut quasi quod, cum laudantium, omnis vitae perferendis repudiandae reiciendis voluptates. Ipsum voluptate aperiam iste harum totam!
+                            Flat B4, House 02/A, Road 1, Niketon, Gulshan 1, Dhaka - 1212 <br /> <br />
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos unde aut dicta dignissimos illum porro aliquam ullam asperiores reiciendis. Iure alias asperiores magni.
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={4}>
