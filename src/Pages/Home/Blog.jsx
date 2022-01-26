@@ -26,7 +26,7 @@ const Blog = () => {
               sx={{
                 backgroundColor: "white",
                 "&:hover": {
-                  backgroundColor: "#263238",
+                  backgroundColor: "grey",
                 },
                 px: 3,
                 mt: 3,
