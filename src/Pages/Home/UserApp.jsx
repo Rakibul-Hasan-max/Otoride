@@ -7,8 +7,8 @@ import vector1 from '../../Images/vector1.svg'
 import vector2 from '../../Images/vector2.svg'
 
 const UserApp = () => {
-  return <div>
-      <Container>
+  return <Box>
+      <Container sx={{mt: 20}}>
       <Grid  container
   direction="row"
   justifyContent="center"
@@ -59,27 +59,27 @@ const UserApp = () => {
     </Typography>
   </Grid>
 </Grid>
-
+<br />
 <Fab
-              variant="extended"
-              size="medium"
-              color="primary"
-              sx={{
-                backgroundColor: "black",
-                "&:hover": {
-                  backgroundColor: "#263238",
-                },
-                px: 4,
-                mt: 2,
-                mb:3
-              }}
-            >
-              learn more
-            </Fab>
+    variant="extended"
+    size="medium"
+    color="primary"
+    sx={{
+      backgroundColor: "black",
+      "&:hover": {
+        backgroundColor: "#263238",
+      },
+      px: 4,
+      mt: 2,
+      mb:3
+    }}
+  >
+    learn more
+  </Fab>
   </Grid>
 </Grid>
       </Container>
-  </div>;
+  </Box>;
 };
 
 export default UserApp;
