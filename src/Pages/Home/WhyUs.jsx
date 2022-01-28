@@ -1,12 +1,8 @@
 import { Container, Typography } from '@mui/material';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import { Box } from '@mui/system';
 import React from 'react';
-
-
 
 const fakeData = [
     {
@@ -32,9 +28,7 @@ const fakeData = [
         title: 'Greate User Experience ',
         description: "We’ll help you to integrate any vehicle type to OTORide platform. It may be kickn scooter, Any other type of scooters, ",
         img: 'https://i.ibb.co/ZB74B97/frame4.png'
-    },
-    
-
+    }
 ]
 
 const WhyUs = () => {
@@ -45,31 +39,26 @@ const WhyUs = () => {
             Why OTORide
           </Typography>
          <Container>
-         <Box sx={{ display: 'flex',mt:4,ml:10,flexWrap: 'wrap',mb:10 }}>
-         {
-              fakeData.map((data) => (
-                <Card sx={{ maxWidth: 210,mr:3,borderRadius: 4,mt:3 }}>
-                 <Box sx={{p:1,ml:2,mt:3}}  className={`frame-img ${data.id}` }>
-                 <img  src={data.img} />
-               </Box>
+          <Box sx={{ display: 'flex',mt:4,ml:10,flexWrap: 'wrap',mb:10 }}>
+          {
+            fakeData.map((data) => (
+              <Card sx={{ maxWidth: 210,mr:3,borderRadius: 4,mt:3 }}>
+                <Box sx={{p:1,ml:2,mt:3}}  className={`frame-img ${data.id}` }>
+                  <img  src={data.img} />
+                </Box>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                   {data.title}
+                  {data.title}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {data.description}
                   </Typography>
                 </CardContent>
-                <CardActions>
-                  
-                </CardActions>
               </Card>
-              ))
-          }
-         </Box>
+            ))
+            }
+          </Box>
          </Container>
-       
-        
       </Container>
   </div>;
 };
